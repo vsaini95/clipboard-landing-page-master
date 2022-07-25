@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+.headerBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35vh;
+  background-image: url(images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.one {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.logo img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 42px;
+}
+.box {
+  width: 38%;
+  text-align: center;
+}
+.box h1 {
+  font-size: 2.1rem;
+}
+.box p {
+  color: hsl(201, 11%, 66%);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+}
+.flex {
+  padding-bottom: 8rem;
+}
+.one button {
+  border: none;
+  color: #fff;
+  padding: 13px 30px;
+  font-weight: 600;
+  border-radius: 2rem;
+  margin-right: 10px;
+  box-shadow: 1px 1px 2px 1px rgb(227, 226, 226);
+}
+.box h2 {
+  font-size: 2rem;
+}
+.two {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.twoDiv {
+  width: calc(60% - 20px);
+  padding-bottom: 3rem;
+}
+.twoDiv p {
+  margin-top: 10px;
+  color: hsl(201, 11%, 66%);
+  line-height: 2rem;
+}
+.deviceImage {
+  max-width: 100%;
+  height: auto;
+  padding: 4rem 0;
+}
+.cards {
+  padding: 3rem 5rem;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+.card {
+  width: calc(60% - 20px);
+  padding: 2rem 20px;
+}
+.card .cardp {
+  padding-top: 3rem;
+}
+.card .cardp p {
+  padding-top: 1.5rem;
+  color: hsl(201, 11%, 66%);
+  line-height: 2rem;
+}
+.logos {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem 5rem;
+}
+.logos .image {
+  min-width: 160px;
+}
+.logos img {
+  width: 100%;
+  height: auto;
+}
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1f3f4;
+  padding: 3rem 8rem;
+  flex-wrap: wrap;
+}
+footer .Footerlogo img {
+  width: 80px;
+  height: auto;
+  min-width: 80px;
+  margin-bottom: 2rem;
+}
+.listDiv {
+  list-style-type: none;
+  min-width: 150px;
+}
+.listDiv li {
+  padding-bottom: 1.5rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: hsl(216, 3%, 35%);
+}
+.contactUs {
+  min-width: 160px;
+}
+.contactUs img {
+  margin: 0 0.8rem;
+}
+@media screen and (max-width: 1025px) {
+  .box {
+    width: calc(50% - 10px);
+  }
+  .box h1 {
+    font-size: 1.8rem;
+  }
+  .box h2 {
+    font-size: 1.5rem;
+  }
+  .two {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .Divs {
+    width: calc(50% - 10px);
+    padding-top: 4rem;
+  }
+  .twoDiv {
+    text-align: center;
+    width: 100%;
+  }
+  .cards {
+    flex-wrap: wrap;
+  }
+  .logos {
+    flex-wrap: wrap;
+  }
+  .image {
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  .headerBg {
+    width: 100%;
+    height: 32vh;
+    background-image: url(images/bg-header-mobile.png);
+  }
+  .box {
+    width: calc(80% - 20px);
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .cards {
+    padding: 0%;
+  }
+  .card {
+    width: calc(80% - 20px);
+    padding: 0%;
+    margin-top: 3rem;
+  }
+  .Divs {
+    width: calc(80% - 20px);
+  }
+  .one button {
+    padding: 18px 6.5rem;
+    margin-bottom: 20px;
+  }
+  .deviceImage {
+    padding: 30px;
+  }
+  footer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contactUs img {
+    margin-top: 2rem;
+  }
+}
